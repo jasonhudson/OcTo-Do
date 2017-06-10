@@ -2,21 +2,19 @@
   <head>
     <meta charset=utf-8>
     <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <div ng-controller="todoController">
       <form name="frm" ng-submit="addTodo()">
         <label>Task</label>
-        <input type="text" name="newtodo" ng-model="newTodo" required /><br>
-        <label>Description</label>
-        <input type="text" name="description" ng-model="description" required />
+        <input type="text" name="newtodo" ng-model="newTodo" required />
         <button ng-disabled="frm.$invalid">Go</button>
       </form>
-      <button ng-click="clearTodos()">Clear Completed</button>
-      <ul>
-        <li ng-repeat="todo in todos">
-          <input type="checkbox" ng-model="todo.done" />
+      <ul class="taskList">
+        <li class="taskItem" ng-repeat="taskItem in taskItem track by $index" ng-model="taskItem">
+          <input type="checkbox" class="taskCheckbox" ng-model="taskItem.complete" />
           <span ng-class="{'done':todo.done}">{{todo.title}} <br>{{todo.description}}</span>
         </li>
       </ul>

@@ -1,4 +1,31 @@
-.done{
-    text-decoration: line-through;
-    color: #ccc;
-    }
+html { font-size: 100%; }
+
+body {
+  background: #b1f6cb;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* task styles */
+
+.taskList {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.taskItem {
+  border-top: 1px solid #e5e5e5;
+  padding: 15px 0;
+  color: #777;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+.taskList .taskItem:nth-child(even) { background: #fcfcfc; }
+
+.taskCheckbox { margin-right: 1em; }
+
+.complete-true {
+  text-decoration: line-through;
+  color: #bebebe;
+}
