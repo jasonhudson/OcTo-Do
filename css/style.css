@@ -82,7 +82,6 @@ input::placeholder {
 }
 
 .todo {
-  border-top: 1px solid #CACACA;
   padding: 15px 0;
   color: #777;
   font-weight: 600;
@@ -90,9 +89,22 @@ input::placeholder {
   letter-spacing: 0.5px;
 }
 
-.todoList .todos:nth-child(even) { background: #fcfcfc; }
+.todoList .todos:nth-child(even) { 
+    background: #fcfcfc; 
+}
 
-.todoCheckbox { margin-right: 1em; }
+/* fancy alternating background colours courtesy of: https://stackoverflow.com/questions/358350/alternate-background-colors-for-list-items */
+li { 
+    background: g#CACACA; 
+}
+
+li:nth-child(odd) { 
+    background: #FEFFFD; 
+}
+
+.todoCheckbox { 
+    margin-right: 1em; 
+}
 
 .done {
   text-decoration: line-through;
