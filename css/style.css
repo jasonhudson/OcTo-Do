@@ -1,18 +1,54 @@
-html { font-size: 100%; }
+html { 
+    font-size: 100%; 
+}
 
 body {
-  background: #b1f6cb;
+  background: #506C82;
   font-family: 'Open Sans', sans-serif;
+  margin-top: 50px;
+}
+
+/* main container */
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 20px 0;
+  -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+
+/* header styling */
+.logo {
+    text-align: center;
+}
+
+h1 {
+  color: #666;
+  text-align: center;
+  font-weight: 400;
+  margin: 0;
+}
+
+.tagline {
+  margin-top: -10px;
+  text-align: center;
+  padding: 5px 20px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #777;
 }
 
 /* task styles */
 
-.taskList {
+.todoList {
   list-style: none;
   padding: 0 20px;
 }
 
-.taskItem {
+.todo {
   border-top: 1px solid #e5e5e5;
   padding: 15px 0;
   color: #777;
@@ -21,11 +57,11 @@ body {
   letter-spacing: 0.5px;
 }
 
-.taskList .taskItem:nth-child(even) { background: #fcfcfc; }
+.todoList .todos:nth-child(even) { background: #fcfcfc; }
 
-.taskCheckbox { margin-right: 1em; }
+.todoCheckbox { margin-right: 1em; }
 
-.complete-true {
+.done {
   text-decoration: line-through;
   color: #bebebe;
 }

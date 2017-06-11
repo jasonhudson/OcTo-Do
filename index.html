@@ -1,23 +1,34 @@
-<html ng-app="ToDo">
+<!doctype html>
+<html>
   <head>
     <meta charset=utf-8>
+    <title>OcTo-Do</title>
     <meta name=viewport content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <div ng-controller="todoController">
+  <div ng-app="ToDo">
+  <div class="container">
+    <div class="content" ng-controller="todoController">
+    <div class="logo">
+    <img src="img/logo_small.png" alt="Octo">
+    </div>
+    <h1>OcTo-Do</h1>
+      <p class="tagline">an Octo approved todo list</p>
       <form name="frm" ng-submit="addTodo()">
         <label>Task</label>
-        <input type="text" name="newtodo" ng-model="newTodo" required />
+        <input type="text" name="newTodo" ng-model="newTodo" required />
         <button ng-disabled="frm.$invalid">Go</button>
       </form>
-      <ul class="taskList">
-        <li class="taskItem" ng-repeat="taskItem in taskItem track by $index" ng-model="taskItem">
-          <input type="checkbox" class="taskCheckbox" ng-model="taskItem.complete" />
-          <span ng-class="{'done':todo.done}">{{todo.title}} <br>{{todo.description}}</span>
+      <ul class="todoList">
+        <li class="todo" ng-repeat="todo in todos track by $index" ng-model="todos">
+          <input type="checkbox" class="todoCheckbox" data-ng-model="todo.done" />
+          <span ng-class="{'done':todo.done}">{{todo.title}}</span>
         </li>
       </ul>
+    </div>
+    </div>
     </div>
     
   </div>
