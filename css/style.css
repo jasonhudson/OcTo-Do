@@ -61,11 +61,11 @@ h1 {
 }*/
 .inputContainer input {
     border: none;
-    width: 30%;
+    width: 90%;
     background: #F5F2F2;
     text-align: center;
     padding: 16px;
-    font-size: 20px;
+    font-size: 24px;
     height: 50px;
 }
 /* https://css-tricks.com/almanac/selectors/p/placeholder/ */
@@ -82,11 +82,11 @@ input::placeholder {
 }
 
 .todo {
-  border-top: 1px solid #506C82;
+  border-top: 1px solid #CACACA;
   padding: 15px 0;
   color: #777;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 20px;
   letter-spacing: 0.5px;
 }
 

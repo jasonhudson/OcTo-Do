@@ -16,12 +16,12 @@
     </div>
     <h1>OcTo-Do</h1>
       <p class="tagline">for cephalopods and multi-tasking humans</p>
-      <form>
+      <form name="frm">
         <div class="inputContainer" align="center">
-          <input type="text" id="description" placeholder="What needs to be done?" ng-model="newTodo" required>
+          <input type="text" name="newtodo" placeholder="What needs to be done?" ng-model="newTodo" required>
         </div>
         <div class="row">
-          <button type="button" class="btn btn-success btn-lg" ng-click="addTodo()"><span class="glyphicon glyphicon-save"></span> Add Task </button>
+          <button type="button" class="btn btn-success btn-lg" ng-disabled="frm.$invalid" ng-click="addTodo()"><span class="glyphicon glyphicon-save"></span> Add Task </button>
         </div>
       </form>
       <ul class="todoList">
