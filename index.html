@@ -18,20 +18,16 @@
       <p class="tagline">for cephalopods and multi-tasking humans</p>
       <form>
         <div class="inputContainer" align="center">
-          <input type="text" id="description" class="taskName" placeholder="What do you need to do?" ng-model="newTodo">
+          <input type="text" id="description" placeholder="What needs to be done?" ng-model="newTodo" required>
         </div>
         <div class="row">
-          <button type="button" class="btn btn-success btn-lg taskAdd" ng-click="addTodo()"><span class="glyphicon glyphicon-save"></span> Add </button>
-          <button type="button" class="btn btn-warning btn-lg taskDelete" ng-click="clearTodos()"><span class="glyphicon glyphicon-refresh"></span> Clear </button>
-          <button type="button" class="btn btn-danger btn-lg taskDelete" ng-click="deleteTodo()"><span class="glyphicon glyphicon-trash"></span> Delete </button>
+          <button type="button" class="btn btn-success btn-lg" ng-click="addTodo()"><span class="glyphicon glyphicon-save"></span> Add Task </button>
         </div>
       </form>
-
-
       <ul class="todoList">
         <li class="todo" ng-repeat="todo in todos track by $index" ng-model="todos">
           <input type="checkbox" class="todoCheckbox" data-ng-model="todo.done" />
-          <span ng-class="{'done':todo.done}">{{todo.title}}</span>
+          <span ng-class="{'done':todo.done}">{{todo.title}} </span><button type="button" class="btn btn-danger glyphicon glyphicon-trash pull-right" ng-if="todo.done" ng-click="clearTodos(todo)"></button>
         </li>
       </ul>
       </div>

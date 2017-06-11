@@ -3,9 +3,8 @@ html {
 }
 
 body {
-  background: #506C82;
+  background: #fff;
   font-family: 'Open Sans', sans-serif;
-  margin-top: 50px;
 }
 
 /* main container */
@@ -15,13 +14,12 @@ body {
   margin: 0 auto;
   background: #ffffff;
   padding: 20px 0;
-  -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.2);
-  box-shadow: 0 0 2px rgba(0,0,0,0.2);
 }
 
 .row {
   display: block;
   padding: 10px;
+  margin: 0;
   text-align: center;
   width: 100%;
   clear: both;
@@ -63,14 +61,18 @@ h1 {
 }*/
 .inputContainer input {
     border: none;
-    width: 35%;
-    background: #eee;
+    width: 30%;
+    background: #F5F2F2;
     text-align: center;
-    padding: 10px;
+    padding: 16px;
     font-size: 20px;
     height: 50px;
 }
-
+/* https://css-tricks.com/almanac/selectors/p/placeholder/ */
+input::placeholder {
+    color: #CACACA;
+    font-style: italic;
+}
 
 /* task styles */
 
@@ -80,7 +82,7 @@ h1 {
 }
 
 .todo {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #506C82;
   padding: 15px 0;
   color: #777;
   font-weight: 600;
