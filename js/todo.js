@@ -20,6 +20,7 @@ controller('todoController', ['$scope', function($scope) {
 
         // make sure our input box clears after adding a todo
         $scope.newTodo = '';
+        // Add our new todo to localStorage
         localStorage.setItem('todos', JSON.stringify($scope.todos));
     };
 
