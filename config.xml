@@ -42,13 +42,9 @@
 	<preference name="DisallowOverscroll" value="true" />
 	<preference name="LoadingDialog" value="," />
 	<preference name="LoadUrlTimeoutValue" value="null" />
-	<platform name="ios">
-	</platform>
 	<platform name="android">
 		<icon src="img/icon.png" qualifier="xxxhdpi" />
 		<splash src="img/splash.png" qualifier="" />
-	</platform>
-	<platform name="winphone">
 	</platform>
 	<icon src="img/icon.png" />
 </widget>
