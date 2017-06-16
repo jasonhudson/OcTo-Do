@@ -25,8 +25,8 @@
 	<preference name="DisallowOverscroll" value="true" />
 	<platform name="android">
 		<icon src="img/icon.png" qualifier="xxxhdpi" />
-		<splash src="img/splash.png" qualifier="" />
+		<splash src="splash.png" qualifier="" />
 	</platform>
 	<icon src="img/icon.png" />
-	<splash src="img/splash.png" />
+	<splash src="splash.png" />
 </widget>
