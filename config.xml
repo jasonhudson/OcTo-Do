@@ -10,6 +10,9 @@
 	<author href="" email="jason.hudson@digitalskillsacademy.me">Jason Hudson		</author>
 	<preference name="phonegap-version" value="cli-6.5.0" />
 	<preference name="android-build-tool" value="gradle" />
+	<preference name="android-minSdkVersion" value="11" />
+	<preference name="android-maxSdkVersion" value="14" />
+	<preference name="android-targetSdkVersion" value="14" />
 	<preference name="orientation" value="default" />
 	<preference name="fullscreen" value="true" />
 	<preference name="target-device" value="handset" />
