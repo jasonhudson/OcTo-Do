@@ -24,14 +24,9 @@ controller('todoController', ['$scope', function($scope) {
         localStorage.setItem('todos', JSON.stringify($scope.todos));
     };
 
-    // Clear out the completed todos and update our localStorage
-    $scope.clearTodos = function() {
-        var completedTodos = $scope.todos;
-        $scope.todos = [];
-        angular.forEach(completedTodos, function(todo) {
-            if (!todo.done)
-                $scope.todos.push(todo);
-        });
+    // Delete the completed todos and update our localStorage
+    $scope.deleteTodo = function(index) {
+        $scope.todos.splice(index, 1);
         localStorage.setItem('todos', JSON.stringify($scope.todos));
     };
 }])

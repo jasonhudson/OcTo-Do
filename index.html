@@ -27,7 +27,7 @@
       <ul class="todoList">
         <li class="todo" ng-repeat="todo in todos track by $index">
           <input type="checkbox" class="todoCheckbox" data-ng-model="todo.done" />
-          <span ng-class="{'done':todo.done}">{{todo.title}} </span><button type="button" class="btn btn-danger glyphicon glyphicon-trash pull-right" ng-if="todo.done" ng-click="clearTodos(todo)"></button>
+          <span ng-class="{'done':todo.done}">{{todo.title}} </span><button type="button" class="btn btn-danger glyphicon glyphicon-trash pull-right" ng-if="todo.done" ng-click="deleteTodo($index)"></button>
         </li>
       </ul>
       </div>
