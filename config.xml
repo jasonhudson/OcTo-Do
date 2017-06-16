@@ -19,7 +19,7 @@
 	<preference name="android-targetSdkVersion" value="23" />
 	<preference name="android-maxSdkVersion" value="23" />
 	<preference name="android-installLocation" value="auto" />
-	<preference name="SplashScreen" value="splash" />
+	<preference name="SplashScreen" value="screen" />
 	<preference name="SplashScreenDelay" value="5000" />
 	<preference name="BackgroundColor" value="0x000000" />
 	<preference name="DisallowOverscroll" value="true" />
