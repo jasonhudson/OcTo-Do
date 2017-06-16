@@ -19,11 +19,13 @@
 	<preference name="android-targetSdkVersion" value="23" />
 	<preference name="android-maxSdkVersion" value="23" />
 	<preference name="android-installLocation" value="auto" />
+	<preference name="SplashScreen" value="splash" />
 	<preference name="SplashScreenDelay" value="5000" />
 	<preference name="BackgroundColor" value="0x000000" />
 	<preference name="DisallowOverscroll" value="true" />
 	<platform name="android">
 		<icon src="img/icon.png" qualifier="xxxhdpi" />
+		<splash src="img/splash.png" qualifier="" />
 	</platform>
 	<icon src="img/icon.png" />
 	<splash src="img/splash.png" />
