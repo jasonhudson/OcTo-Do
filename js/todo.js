@@ -1,4 +1,4 @@
-angular.module('ToDo', []).
+angular.module('ToDo', ['ngAnimate']).
 controller('todoController', ['$scope', function($scope) {
 
     // Do we have any saved todos? Check localStorage

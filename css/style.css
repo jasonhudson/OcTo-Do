@@ -51,14 +51,6 @@ h1 {
   color: #777;
 }
 
-/* inputs */
-
-/*.inputContainer {
-  height: 100px;
-  border-top: 1px solid #e5e5e5;
-  position: relative;
-  overflow: hidden;
-}*/
 .inputContainer input {
     border: none;
     width: 90%;
@@ -68,7 +60,10 @@ h1 {
     font-size: 24px;
     height: 50px;
 }
-/* https://css-tricks.com/almanac/selectors/p/placeholder/ */
+/* 
+Targt the input box text for some styling
+https://css-tricks.com/almanac/selectors/p/placeholder/ 
+*/
 input::placeholder {
     color: #CACACA;
     font-style: italic;
@@ -87,13 +82,40 @@ input::placeholder {
   font-weight: 600;
   font-size: 20px;
   letter-spacing: 0.5px;
+  transition: 1s linear all;
+  -webkit-transition: 1s linear all;
 }
 
 .todoList .todos:nth-child(even) { 
     background: #fcfcfc; 
 }
 
-/* fancy alternating background colours courtesy of: https://stackoverflow.com/questions/358350/alternate-background-colors-for-list-items */
+/* 
+List animations for ngAnimate module 
+https://css-tricks.com/animations-the-angular-way/ 
+*/
+
+.todo.ng-enter {
+  opacity: 0;
+}
+
+.todo.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+
+.todo.ng-leave {
+  opacity: 1;
+}
+
+.todo.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+
+/* 
+Fancy alternating background colours courtesy of: 
+https://stackoverflow.com/questions/358350/alternate-background-colors-for-list-items
+*/
+
 li { 
     background: g#CACACA; 
 }
