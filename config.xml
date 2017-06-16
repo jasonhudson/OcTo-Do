@@ -5,46 +5,23 @@
 	id        = "com.hudders.octodo"
 	versionCode="1.0.0"
 	version   = "1.0.0">
-	<name>OcTo-Do		</name>
+	<name>OcTo-Do</name>
 	<description>A simple ToDo app for Android</description>
-	<author href="" email="jason.hudson@digitalskillsacademy.me">Jason Hudson		</author>
-	<preference name="phonegap-version" value="cli-6.5.0" />
-	<preference name="android-build-tool" value="gradle" />
-	<preference name="android-minSdkVersion" value="11" />
-	<preference name="android-maxSdkVersion" value="14" />
-	<preference name="android-targetSdkVersion" value="14" />
+	<author href="https://github.com/jasonhudson/OcTo-Do" email="jason.hudson@digitalskillsacademy.me">Jason Hudson</author>
 	<preference name="orientation" value="default" />
-	<preference name="fullscreen" value="true" />
+	<preference name="fullscreen" value="false" />
 	<preference name="target-device" value="handset" />
 	<preference name="webviewbounce" value="true" />
-	<preference name="prerendered-icon" value="false" />
-	<preference name="stay-in-webview" value="true" />
-	<preference name="ios-statusbarstyle" value="black-transparent" />
-	<preference name="detect-data-types" value="true" />
-	<preference name="exit-on-suspend" value="true" />
 	<preference name="show-splash-screen-spinner" value="true" />
 	<preference name="auto-hide-splash-screen" value="true" />
 	<preference name="FadeSplashScreen " value="true" />
-	<preference name="EnableViewportScale" value="false" />
-	<preference name="MediaPlaybackRequiresUserAction" value="false" />
-	<preference name="AllowInlineMediaPlayback" value="false" />
-	<preference name="BackupWebStorage" value="none" />
-	<preference name="TopActivityIndicator" value="white" />
-	<preference name="KeyboardDisplayRequiresUserAction" value="true" />
-	<preference name="KeyboardShrinksView " value="true" />
-	<preference name="HideKeyboardFormAccessoryBar" value="true" />
-	<preference name="SuppressesIncrementalRendering" value="false" />
-	<preference name="windows-identity-name" value="" />
 	<preference name="android-minSdkVersion" value="14" />
 	<preference name="android-targetSdkVersion" value="23" />
 	<preference name="android-maxSdkVersion" value="23" />
 	<preference name="android-installLocation" value="auto" />
 	<preference name="SplashScreenDelay" value="2000" />
-	<preference name="ErrorUrl" value="null" />
 	<preference name="BackgroundColor" value="0x000000" />
 	<preference name="DisallowOverscroll" value="true" />
-	<preference name="LoadingDialog" value="," />
-	<preference name="LoadUrlTimeoutValue" value="null" />
 	<platform name="android">
 		<icon src="img/icon.png" qualifier="xxxhdpi" />
 		<splash src="img/splash.png" qualifier="" />
