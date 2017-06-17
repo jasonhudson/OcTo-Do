@@ -7,9 +7,8 @@ html {
     font-size: 100%;
     background: #112146;
     background-image: url('../img/splat.png');
-    background-repeat: no-repeat; 
-    background-attachment: fixed;
-    background-position: 0% 110%;
+    background-repeat: no-repeat;
+    background-position: 70% 0%;
 }
 
 body {
@@ -258,7 +257,7 @@ https://codepen.io/msisto/pen/lCofE
   height: 40px;
   width: 40px;
   position: absolute;
-  content: '\2716';
+  content: '\221A';
   display: inline-block;
   font-size: 26.66667px;
   text-align: center;
