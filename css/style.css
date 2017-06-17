@@ -8,7 +8,7 @@ html {
     background: #112146;
     background-image: url('../img/splat.png');
     background-repeat: no-repeat;
-    background-position: 70% 0%;
+    background-position: 0% 0%;
 }
 
 body {
@@ -42,6 +42,10 @@ body {
 /* header styling */
 .logo {
     text-align: center;
+}
+.logo img {
+  width: 130px;
+  height: 97.5px;
 }
 
 h1 {
