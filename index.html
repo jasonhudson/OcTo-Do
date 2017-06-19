@@ -1,44 +1,64 @@
+<!-- 
+## OcTo-Do app v1 ##
+BSc16B MWA assesment 2
+Jason Hudson
+19 June 2017
+-->
+
 <!doctype html>
 <html>
   <head>
     <meta charset=utf-8>
     <title>OcTo-Do</title>
     <meta name=viewport content="width=device-width, initial-scale=1">
+    <!-- Local stylesheets -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-  <div ng-app="ToDo">
-  <div class="container">
-    <div class="content" ng-controller="todoController">
-    <div class="logo">
-    <img src="img/logo.png" alt="Octo">
-    </div>
-    <h1>OcTo-Do</h1>
-      <p class="tagline">for cephalopods and multi-tasking humans</p>
-      <form name="frm">
-        <div class="inputContainer" align="center">
-          <input type="text" name="newtodo" placeholder="What needs to be done?" ng-model="newTodo" required>
-        </div>
-        <div class="row">
-          <button type="button" class="btn btn-lg" ng-disabled="frm.$invalid" ng-click="addTodo()"><span class="glyphicon glyphicon-save"></span> Add Task </button>
-        </div>
-      </form>
-      <ul class="todoList">
-        <li class="todo" ng-repeat="todo in todos track by $index">
-          <input type="checkbox" class="todoCheckbox" data-ng-model="todo.done" />
-          <span class="label" ng-class="{'done':todo.done}">{{todo.title}} </span>
-          <!-- Only expose the delete method when the todo is marked as done using ng-if directive -->
-          <button type="button" class="btn btn-warning glyphicon glyphicon-trash pull-right" ng-if="todo.done" ng-click="deleteTodo($index)"></button>
-        </li>
-      </ul>
+    <!-- This is an Angularjs app -->
+    <div ng-app="ocTodo">
+      <div class="container">
+        <!-- The app controller in todo.js (loaded later) -->
+        <div class="content" ng-controller="todoController">
+          <div class="logo">
+            <!-- The app logo front and centre -->
+            <img src="img/logo.png" alt="Octo">
+          </div>
+          <h1>OcTo-Do</h1>
+          <p class="tagline">for cephalopods and multi-tasking humans</p>
+          <!-- Input form -->
+          <form name="frm">
+            <div class="inputContainer" align="center">
+              <input type="text" name="newtodo" placeholder="What needs to be done?" ng-model="newTodo" required />
             </div>
-    </div>
-    </div>
+            <div class="row">
+              <!--
+              ng-disabled on the button below works in conjunction with the "required" option in the input
+              element above, so we can't add empty items to the array.
+              -->
+              <button type="button" class="btn btn-lg" ng-disabled="frm.$invalid" ng-click="addTodo()"><span class="glyphicon glyphicon-save"></span> Add Task </button>
+            </div>
+          </form>
+          <ul class="todoList">
+            <!-- using "track by $index" so we can hook into the todo that we want to delete later on" -->
+            <li class="todo" ng-repeat="todo in todos track by $index">
+              <input type="checkbox" class="todoCheckbox" data-ng-model="todo.done" />
+              <span class="label" ng-class="{'done':todo.done}">{{todo.title}} </span>
+              <!-- Only expose the delete method when the todo is marked as done using ng-if directive -->
+              <button type="button" class="btn btn-warning glyphicon glyphicon-trash pull-right" ng-if="todo.done" ng-click="deleteTodo($index)"></button>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
-  <script src="js/angular.min.js"></script>
-  <script src="js/angular-animate.js"></script>
-  <script src="js/todo.js"></script>
+</div>
+<!-- Our javascripts -->
+<script src="js/angular.min.js"></script>
+<!-- Using ng-animate for the todo addition and deletion, so we need angular-animate.js -->
+<script src="js/angular-animate.js"></script>
+<!-- The app -->
+<script src="js/todo.js"></script>
 </body>
 </html>

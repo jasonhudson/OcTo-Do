@@ -5,9 +5,12 @@
 
 html { 
     font-size: 100%;
-    background: #112146;
+    background: #112146; 
     background-image: url('../img/splat.png');
     background-repeat: no-repeat;
+    /* unfortunately I couldn't get 
+    background-attachment:fixed 
+    to work with Phonegap */
     background-position: 0% 0%;
 }
 
@@ -143,7 +146,7 @@ https://css-tricks.com/animations-the-angular-way/
 /* 
 Fancy alternating background colours courtesy of: 
 https://stackoverflow.com/questions/358350/alternate-background-colors-for-list-items
-Doesn't seem to work on device after build
+Doesn't work on device after Phonegap build
 
 li { 
     background: g#CACACA; 
